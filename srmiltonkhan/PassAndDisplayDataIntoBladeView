@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    function ShowHome(){
+        $KeyValue = "<p>From ShowHome Method passing into view method page with HTML Taq and Without HTML Taq</p>";
+        return view('Home',['KeyValue'=>$KeyValue]);
+    }
+}
+
+BladePage
+
+{{$KeyValue}} //with HTML Taq
+{!!$KeyValue!!} //without HTML Taq
+
